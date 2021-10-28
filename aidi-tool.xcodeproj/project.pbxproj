@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1AF35F3272AEB240029A41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF35F2272AEB240029A41C /* AppDelegate.swift */; };
+		E1AF35F5272AEB240029A41C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF35F4272AEB240029A41C /* SceneDelegate.swift */; };
+		E1AF35F8272AEB240029A41C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35F6272AEB240029A41C /* LaunchScreen.storyboard */; };
+		E1AF35FB272AEB240029A41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35F9272AEB240029A41C /* Main.storyboard */; };
+		E1AF3604272AEB240029A41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF3603272AEB240029A41C /* AppDelegate.swift */; };
+		E1AF3607272AEB240029A41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3605272AEB240029A41C /* Main.storyboard */; };
+		E1AF360F272AEB240029A41C /* aidi-tool Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1AF360E272AEB240029A41C /* aidi-tool Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1AF3619272AEB240029A41C /* aidi-tool Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1AF3618272AEB240029A41C /* aidi-tool Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1AF361F272AEB240029A41C /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E2272AEB1C0029A41C /* Main.html */; };
+		E1AF3620272AEB240029A41C /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E2272AEB1C0029A41C /* Main.html */; };
+		E1AF3621272AEB240029A41C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E4272AEB1C0029A41C /* Icon.png */; };
+		E1AF3622272AEB240029A41C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E4272AEB1C0029A41C /* Icon.png */; };
+		E1AF3623272AEB240029A41C /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E5272AEB1C0029A41C /* Style.css */; };
+		E1AF3624272AEB240029A41C /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E5272AEB1C0029A41C /* Style.css */; };
+		E1AF3625272AEB240029A41C /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E6272AEB1C0029A41C /* Script.js */; };
+		E1AF3626272AEB240029A41C /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E6272AEB1C0029A41C /* Script.js */; };
+		E1AF3627272AEB240029A41C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF35E7272AEB1C0029A41C /* ViewController.swift */; };
+		E1AF3628272AEB240029A41C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF35E7272AEB1C0029A41C /* ViewController.swift */; };
+		E1AF3629272AEB240029A41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E8272AEB240029A41C /* Assets.xcassets */; };
+		E1AF362A272AEB240029A41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1AF35E8272AEB240029A41C /* Assets.xcassets */; };
+		E1AF362B272AEB240029A41C /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF35EA272AEB240029A41C /* SafariWebExtensionHandler.swift */; };
+		E1AF362C272AEB240029A41C /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF35EA272AEB240029A41C /* SafariWebExtensionHandler.swift */; };
+		E1AF3644272AEB240029A41C /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = E1AF363E272AEB240029A41C /* background.js */; };
+		E1AF3645272AEB240029A41C /* images in Resources */ = {isa = PBXBuildFile; fileRef = E1AF363F272AEB240029A41C /* images */; };
+		E1AF3646272AEB240029A41C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3640272AEB240029A41C /* manifest.json */; };
+		E1AF3647272AEB240029A41C /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3641272AEB240029A41C /* _locales */; };
+		E1AF3648272AEB240029A41C /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3642272AEB240029A41C /* content.js */; };
+		E1AF3649272AEB240029A41C /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3643272AEB240029A41C /* jquery.js */; };
+		E1AF364A272AEB240029A41C /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = E1AF363E272AEB240029A41C /* background.js */; };
+		E1AF364B272AEB240029A41C /* images in Resources */ = {isa = PBXBuildFile; fileRef = E1AF363F272AEB240029A41C /* images */; };
+		E1AF364C272AEB240029A41C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3640272AEB240029A41C /* manifest.json */; };
+		E1AF364D272AEB240029A41C /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3641272AEB240029A41C /* _locales */; };
+		E1AF364E272AEB240029A41C /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3642272AEB240029A41C /* content.js */; };
+		E1AF364F272AEB240029A41C /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3643272AEB240029A41C /* jquery.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1AF3610272AEB240029A41C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1AF35DC272AEB1B0029A41C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1AF360D272AEB240029A41C;
+			remoteInfo = "aidi-tool Extension (iOS)";
+		};
+		E1AF361A272AEB240029A41C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1AF35DC272AEB1B0029A41C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1AF3617272AEB240029A41C;
+			remoteInfo = "aidi-tool Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1AF3632272AEB240029A41C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1AF360F272AEB240029A41C /* aidi-tool Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF3639272AEB240029A41C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1AF3619272AEB240029A41C /* aidi-tool Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E1AF35E3272AEB1C0029A41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		E1AF35E4272AEB1C0029A41C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		E1AF35E5272AEB1C0029A41C /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		E1AF35E6272AEB1C0029A41C /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		E1AF35E7272AEB1C0029A41C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1AF35E8272AEB240029A41C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1AF35EA272AEB240029A41C /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		E1AF35EF272AEB240029A41C /* aidi-tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aidi-tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AF35F2272AEB240029A41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1AF35F4272AEB240029A41C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1AF35F7272AEB240029A41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1AF35FA272AEB240029A41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1AF35FC272AEB240029A41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1AF3601272AEB240029A41C /* aidi-tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aidi-tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AF3603272AEB240029A41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1AF3606272AEB240029A41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1AF3608272AEB240029A41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1AF3609272AEB240029A41C /* aidi-tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "aidi-tool.entitlements"; sourceTree = "<group>"; };
+		E1AF360E272AEB240029A41C /* aidi-tool Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "aidi-tool Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AF3613272AEB240029A41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1AF3618272AEB240029A41C /* aidi-tool Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "aidi-tool Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AF361D272AEB240029A41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1AF361E272AEB240029A41C /* aidi-tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "aidi-tool.entitlements"; sourceTree = "<group>"; };
+		E1AF363E272AEB240029A41C /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		E1AF363F272AEB240029A41C /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Resources/images; sourceTree = "<group>"; };
+		E1AF3640272AEB240029A41C /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		E1AF3641272AEB240029A41C /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = Resources/_locales; sourceTree = "<group>"; };
+		E1AF3642272AEB240029A41C /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		E1AF3643272AEB240029A41C /* jquery.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = jquery.js; path = Resources/jquery.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1AF35EC272AEB240029A41C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF35FE272AEB240029A41C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF360B272AEB240029A41C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF3615272AEB240029A41C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1AF35DB272AEB1B0029A41C = {
+			isa = PBXGroup;
+			children = (
+				E1AF35E0272AEB1C0029A41C /* Shared (App) */,
+				E1AF35E9272AEB240029A41C /* Shared (Extension) */,
+				E1AF35F1272AEB240029A41C /* iOS (App) */,
+				E1AF3602272AEB240029A41C /* macOS (App) */,
+				E1AF3612272AEB240029A41C /* iOS (Extension) */,
+				E1AF361C272AEB240029A41C /* macOS (Extension) */,
+				E1AF35F0272AEB240029A41C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1AF35E0272AEB1C0029A41C /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF35E7272AEB1C0029A41C /* ViewController.swift */,
+				E1AF35E8272AEB240029A41C /* Assets.xcassets */,
+				E1AF35E1272AEB1C0029A41C /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		E1AF35E1272AEB1C0029A41C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF35E2272AEB1C0029A41C /* Main.html */,
+				E1AF35E4272AEB1C0029A41C /* Icon.png */,
+				E1AF35E5272AEB1C0029A41C /* Style.css */,
+				E1AF35E6272AEB1C0029A41C /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1AF35E9272AEB240029A41C /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF363D272AEB240029A41C /* Resources */,
+				E1AF35EA272AEB240029A41C /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		E1AF35F0272AEB240029A41C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF35EF272AEB240029A41C /* aidi-tool.app */,
+				E1AF3601272AEB240029A41C /* aidi-tool.app */,
+				E1AF360E272AEB240029A41C /* aidi-tool Extension.appex */,
+				E1AF3618272AEB240029A41C /* aidi-tool Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1AF35F1272AEB240029A41C /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF35F2272AEB240029A41C /* AppDelegate.swift */,
+				E1AF35F4272AEB240029A41C /* SceneDelegate.swift */,
+				E1AF35F6272AEB240029A41C /* LaunchScreen.storyboard */,
+				E1AF35F9272AEB240029A41C /* Main.storyboard */,
+				E1AF35FC272AEB240029A41C /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		E1AF3602272AEB240029A41C /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF3603272AEB240029A41C /* AppDelegate.swift */,
+				E1AF3605272AEB240029A41C /* Main.storyboard */,
+				E1AF3608272AEB240029A41C /* Info.plist */,
+				E1AF3609272AEB240029A41C /* aidi-tool.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		E1AF3612272AEB240029A41C /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF3613272AEB240029A41C /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		E1AF361C272AEB240029A41C /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF361D272AEB240029A41C /* Info.plist */,
+				E1AF361E272AEB240029A41C /* aidi-tool.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		E1AF363D272AEB240029A41C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF363E272AEB240029A41C /* background.js */,
+				E1AF363F272AEB240029A41C /* images */,
+				E1AF3640272AEB240029A41C /* manifest.json */,
+				E1AF3641272AEB240029A41C /* _locales */,
+				E1AF3642272AEB240029A41C /* content.js */,
+				E1AF3643272AEB240029A41C /* jquery.js */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1AF35EE272AEB240029A41C /* aidi-tool (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1AF3633272AEB240029A41C /* Build configuration list for PBXNativeTarget "aidi-tool (iOS)" */;
+			buildPhases = (
+				E1AF35EB272AEB240029A41C /* Sources */,
+				E1AF35EC272AEB240029A41C /* Frameworks */,
+				E1AF35ED272AEB240029A41C /* Resources */,
+				E1AF3632272AEB240029A41C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1AF3611272AEB240029A41C /* PBXTargetDependency */,
+			);
+			name = "aidi-tool (iOS)";
+			productName = "aidi-tool (iOS)";
+			productReference = E1AF35EF272AEB240029A41C /* aidi-tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1AF3600272AEB240029A41C /* aidi-tool (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1AF363A272AEB240029A41C /* Build configuration list for PBXNativeTarget "aidi-tool (macOS)" */;
+			buildPhases = (
+				E1AF35FD272AEB240029A41C /* Sources */,
+				E1AF35FE272AEB240029A41C /* Frameworks */,
+				E1AF35FF272AEB240029A41C /* Resources */,
+				E1AF3639272AEB240029A41C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1AF361B272AEB240029A41C /* PBXTargetDependency */,
+			);
+			name = "aidi-tool (macOS)";
+			productName = "aidi-tool (macOS)";
+			productReference = E1AF3601272AEB240029A41C /* aidi-tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1AF360D272AEB240029A41C /* aidi-tool Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1AF362F272AEB240029A41C /* Build configuration list for PBXNativeTarget "aidi-tool Extension (iOS)" */;
+			buildPhases = (
+				E1AF360A272AEB240029A41C /* Sources */,
+				E1AF360B272AEB240029A41C /* Frameworks */,
+				E1AF360C272AEB240029A41C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aidi-tool Extension (iOS)";
+			productName = "aidi-tool Extension (iOS)";
+			productReference = E1AF360E272AEB240029A41C /* aidi-tool Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E1AF3617272AEB240029A41C /* aidi-tool Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1AF3636272AEB240029A41C /* Build configuration list for PBXNativeTarget "aidi-tool Extension (macOS)" */;
+			buildPhases = (
+				E1AF3614272AEB240029A41C /* Sources */,
+				E1AF3615272AEB240029A41C /* Frameworks */,
+				E1AF3616272AEB240029A41C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aidi-tool Extension (macOS)";
+			productName = "aidi-tool Extension (macOS)";
+			productReference = E1AF3618272AEB240029A41C /* aidi-tool Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1AF35DC272AEB1B0029A41C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E1AF35EE272AEB240029A41C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E1AF3600272AEB240029A41C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E1AF360D272AEB240029A41C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E1AF3617272AEB240029A41C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = E1AF35DF272AEB1B0029A41C /* Build configuration list for PBXProject "aidi-tool" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1AF35DB272AEB1B0029A41C;
+			productRefGroup = E1AF35F0272AEB240029A41C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1AF35EE272AEB240029A41C /* aidi-tool (iOS) */,
+				E1AF3600272AEB240029A41C /* aidi-tool (macOS) */,
+				E1AF360D272AEB240029A41C /* aidi-tool Extension (iOS) */,
+				E1AF3617272AEB240029A41C /* aidi-tool Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1AF35ED272AEB240029A41C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF3621272AEB240029A41C /* Icon.png in Resources */,
+				E1AF35F8272AEB240029A41C /* LaunchScreen.storyboard in Resources */,
+				E1AF361F272AEB240029A41C /* Main.html in Resources */,
+				E1AF3625272AEB240029A41C /* Script.js in Resources */,
+				E1AF3629272AEB240029A41C /* Assets.xcassets in Resources */,
+				E1AF35FB272AEB240029A41C /* Main.storyboard in Resources */,
+				E1AF3623272AEB240029A41C /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF35FF272AEB240029A41C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF3622272AEB240029A41C /* Icon.png in Resources */,
+				E1AF3624272AEB240029A41C /* Style.css in Resources */,
+				E1AF3607272AEB240029A41C /* Main.storyboard in Resources */,
+				E1AF3626272AEB240029A41C /* Script.js in Resources */,
+				E1AF362A272AEB240029A41C /* Assets.xcassets in Resources */,
+				E1AF3620272AEB240029A41C /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF360C272AEB240029A41C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF364F272AEB240029A41C /* jquery.js in Resources */,
+				E1AF364B272AEB240029A41C /* images in Resources */,
+				E1AF364C272AEB240029A41C /* manifest.json in Resources */,
+				E1AF364D272AEB240029A41C /* _locales in Resources */,
+				E1AF364A272AEB240029A41C /* background.js in Resources */,
+				E1AF364E272AEB240029A41C /* content.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF3616272AEB240029A41C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF3649272AEB240029A41C /* jquery.js in Resources */,
+				E1AF3645272AEB240029A41C /* images in Resources */,
+				E1AF3646272AEB240029A41C /* manifest.json in Resources */,
+				E1AF3647272AEB240029A41C /* _locales in Resources */,
+				E1AF3644272AEB240029A41C /* background.js in Resources */,
+				E1AF3648272AEB240029A41C /* content.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1AF35EB272AEB240029A41C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF3627272AEB240029A41C /* ViewController.swift in Sources */,
+				E1AF35F3272AEB240029A41C /* AppDelegate.swift in Sources */,
+				E1AF35F5272AEB240029A41C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF35FD272AEB240029A41C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF3628272AEB240029A41C /* ViewController.swift in Sources */,
+				E1AF3604272AEB240029A41C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF360A272AEB240029A41C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF362B272AEB240029A41C /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AF3614272AEB240029A41C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF362C272AEB240029A41C /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1AF3611272AEB240029A41C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1AF360D272AEB240029A41C /* aidi-tool Extension (iOS) */;
+			targetProxy = E1AF3610272AEB240029A41C /* PBXContainerItemProxy */;
+		};
+		E1AF361B272AEB240029A41C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1AF3617272AEB240029A41C /* aidi-tool Extension (macOS) */;
+			targetProxy = E1AF361A272AEB240029A41C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1AF35E2272AEB1C0029A41C /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1AF35E3272AEB1C0029A41C /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		E1AF35F6272AEB240029A41C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1AF35F7272AEB240029A41C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E1AF35F9272AEB240029A41C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1AF35FA272AEB240029A41C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1AF3605272AEB240029A41C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1AF3606272AEB240029A41C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1AF362D272AEB240029A41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1AF362E272AEB240029A41C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E1AF3630272AEB240029A41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "aidi-tool Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmk.aidi-tool.Extension";
+				PRODUCT_NAME = "aidi-tool Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1AF3631272AEB240029A41C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "aidi-tool Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmk.aidi-tool.Extension";
+				PRODUCT_NAME = "aidi-tool Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1AF3634272AEB240029A41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "aidi-tool";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmk.aidi-tool";
+				PRODUCT_NAME = "aidi-tool";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1AF3635272AEB240029A41C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "aidi-tool";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmk.aidi-tool";
+				PRODUCT_NAME = "aidi-tool";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1AF3637272AEB240029A41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/aidi-tool.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "aidi-tool Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmk.aidi-tool.Extension";
+				PRODUCT_NAME = "aidi-tool Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E1AF3638272AEB240029A41C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/aidi-tool.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "aidi-tool Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmk.aidi-tool.Extension";
+				PRODUCT_NAME = "aidi-tool Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E1AF363B272AEB240029A41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/aidi-tool.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "aidi-tool";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmk.aidi-tool";
+				PRODUCT_NAME = "aidi-tool";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E1AF363C272AEB240029A41C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/aidi-tool.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "aidi-tool";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmk.aidi-tool";
+				PRODUCT_NAME = "aidi-tool";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1AF35DF272AEB1B0029A41C /* Build configuration list for PBXProject "aidi-tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AF362D272AEB240029A41C /* Debug */,
+				E1AF362E272AEB240029A41C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1AF362F272AEB240029A41C /* Build configuration list for PBXNativeTarget "aidi-tool Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AF3630272AEB240029A41C /* Debug */,
+				E1AF3631272AEB240029A41C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1AF3633272AEB240029A41C /* Build configuration list for PBXNativeTarget "aidi-tool (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AF3634272AEB240029A41C /* Debug */,
+				E1AF3635272AEB240029A41C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1AF3636272AEB240029A41C /* Build configuration list for PBXNativeTarget "aidi-tool Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AF3637272AEB240029A41C /* Debug */,
+				E1AF3638272AEB240029A41C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1AF363A272AEB240029A41C /* Build configuration list for PBXNativeTarget "aidi-tool (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AF363B272AEB240029A41C /* Debug */,
+				E1AF363C272AEB240029A41C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1AF35DC272AEB1B0029A41C /* Project object */;
+}
