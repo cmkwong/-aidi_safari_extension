@@ -2,7 +2,8 @@ const MAX_STANDARD_ANSWER_LEN = 6;
 
 function getNextBtn() {
   try {
-    let [link, project_id, locale] = getProjectLinkIdLocale();
+    let [link, project_id, locale, query_code] =
+      getProjectLink_Id_Locale_Querycode();
     let project_type = getProjectType(project_id);
     if (project_type === "standard") {
       return document.getElementsByClassName("forward-btn")[0];
@@ -14,6 +15,10 @@ function getNextBtn() {
       console.log(err);
     };
   }
+}
+
+function getSentNotice() {
+  return document.querySelector(".validates-clicked");
 }
 
 function getPopUpWindow() {
@@ -47,23 +52,71 @@ function getProjectType(project_id) {
   } else return "standard";
 }
 
+function _get_result_title(result) {
+  const filters = {
+    v1: ".title",
+    v2: ".result-card-title",
+  };
+  let title;
+  for (const version in filters) {
+    title = result.querySelector(filters[version])?.innerText;
+    if (title) break;
+  }
+  return title;
+}
+
+function _get_result_description(result) {
+  const filters = {
+    v1: ".description",
+    v2: ".result-card-description",
+  };
+  let description;
+  for (const version in filters) {
+    description = [...result.querySelectorAll(filters[version])]
+      ?.map((des) => des.innerText.substring(0, 200))
+      .join("\n");
+    if (description) break;
+  }
+  return description;
+}
+
+function _get_result_footnote(result) {
+  const filters = {
+    v1: ".footnote",
+    v2: ".result-card-footnote",
+  };
+  let footnote;
+  for (const version in filters) {
+    footnote = result.querySelector(filters[version])?.innerText;
+    if (footnote) break;
+  }
+  return footnote;
+}
+
 function getResults(project_type) {
   let all_resultDict;
   if (project_type === "standard") {
+    // new version
     let all_parsecResult = [
       ...document
-        .getElementsByClassName("iframe")[0]
-        .getElementsByTagName("iframe")
-        .item(0)
-        .contentDocument.querySelectorAll(".parsec-result"),
+        .querySelector("iframe")
+        .contentDocument.querySelectorAll(".result"),
     ];
+    // old version
+    all_parsecResult.length !== 0
+      ? all_parsecResult
+      : (all_parsecResult = [
+          ...document
+            .getElementsByClassName("iframe")[0]
+            .getElementsByTagName("iframe")
+            .item(0)
+            .contentDocument.querySelectorAll(".parsec-result"),
+        ]);
     all_resultDict = all_parsecResult.map((parsecResult) => {
       let type = parsecResult.parentNode.className.split(" ")[1];
-      let title = parsecResult.querySelector(".title")?.innerText;
-      let description = [...parsecResult.querySelectorAll(".description")]
-        ?.map((des) => des.innerText.substring(0, 200))
-        .join("\n");
-      let footnote = parsecResult.querySelector(".footnote")?.innerText;
+      let title = _get_result_title(parsecResult);
+      let description = _get_result_description(parsecResult);
+      let footnote = _get_result_footnote(parsecResult);
       let link = parsecResult.querySelector("a")?.getAttribute("href");
       let resultDict = {
         type: type ? type : "",
@@ -80,41 +133,12 @@ function getResults(project_type) {
   return all_resultDict;
 }
 
-function getResultLinks(project_type) {
-  let all_resultLinkArray;
-  if (project_type === "standard") {
-    let all_parsecResult = [
-      ...document
-        .getElementsByClassName("iframe")[0]
-        .getElementsByTagName("iframe")
-        .item(0)
-        .contentDocument.querySelectorAll(".parsec-result"),
-    ];
-    all_resultLinkArray = all_parsecResult.map((parsecResult) => {
-      let link = parsecResult.querySelector("a")?.getAttribute("href");
-      return link ? link : "NO LINK";
-    });
-  } else if (project_type === "sbs") {
-    all_resultLinkArray = [];
-  }
-  return all_resultLinkArray;
-}
-
 function getQueryText(project_type) {
   if (project_type === "standard") {
-    let query_txt = document
-      .getElementsByClassName("iframe")[0]
-      .getElementsByTagName("iframe")
-      .item(0)
-      .contentDocument.getElementsByClassName("search-input form-control")[0]
+    return document
+      .querySelector("iframe")
+      .contentDocument.querySelector(".search input")
       .getAttribute("value");
-    if (query_txt)
-      return document
-        .getElementsByClassName("iframe")[0]
-        .getElementsByTagName("iframe")
-        .item(0)
-        .contentDocument.getElementsByClassName("search-input form-control")[0]
-        .getAttribute("value");
   } else if (project_type === "valid") {
     return document.querySelector("#widget-container h1").innerText;
   } else if (project_type === "sbs") {
@@ -127,14 +151,14 @@ function getQueryText(project_type) {
   }
 }
 
-function getProjectLinkIdLocale() {
+function getProjectLink_Id_Locale_Querycode() {
   const url = window.location["href"];
-  const re_id_locale = /\/project\/(\S+?)\/grading\/(\S+?)\//;
+  const re_id_locale = /\/project\/(\S+?)\/grading\/(\S+?)\/s\/(\S+?)\//;
   const matched_array = url.match(re_id_locale);
   if (matched_array) {
-    return [url, matched_array[1], matched_array[2]];
+    return [url, matched_array[1], matched_array[2], matched_array[3]];
   }
-  return ["", "", ""];
+  return ["", "", "", ""];
 }
 
 function getSearchDateLocation(project_type) {
@@ -154,7 +178,7 @@ function getGrader() {
   return document
     .querySelector("#dd-menu__shared_component__-1-item0")
     .innerText.trim()
-    .replace(" ", "");
+    .replace(/ /g, "");
 }
 
 function getAnswer(project_type) {
@@ -209,7 +233,8 @@ function getAnswer(project_type) {
 
 function getQueryPostData() {
   try {
-    let [query_link, project_id, locale] = getProjectLinkIdLocale();
+    let [query_link, project_id, locale, query_code] =
+      getProjectLink_Id_Locale_Querycode();
     let project_type = getProjectType(project_id);
     let searchDateLocation = getSearchDateLocation(project_type);
     let query_text = getQueryText(project_type);
@@ -224,6 +249,7 @@ function getQueryPostData() {
       grader: grader,
       project_id: project_id,
       locale: locale,
+      query_code: query_code,
       results: results,
     };
     return data;
@@ -274,29 +300,56 @@ function getPopUpPostData() {
   return data;
 }
 
-let nextBtn, popUpWindow;
+function sendPost() {
+  let url = `https://aidi-work-helper.herokuapp.com/api/v1/query?insertAns=${getInsertedAllowed(
+    nextBtn
+  )}`;
+  let data = getQueryPostData();
+  $.ajax({
+    type: "POST",
+    data: data,
+    url: url,
+    success: function (success) {
+      console.log(data);
+      console.log(success);
+    },
+    error: function (err) {
+      console.log(data);
+      console.log(err);
+    },
+  });
+}
+
+let nextBtn, sentNotice, popUpWindow;
 let interval_fn = setInterval(() => {
-  // let message_el = document.querySelector(".message");
   nextBtn = getNextBtn();
+  sentNotice = getSentNotice(); // only for using short-cut (Ctrl+]) users
   popUpWindow = getPopUpWindow();
   // click the next-btn
   if (nextBtn) {
-    if (!nextBtn.onclick) {
-      nextBtn.onclick = () => {
-        let data = getQueryPostData();
-        let url = `https://aidi-work-helper.herokuapp.com/api/v1/query?insertAns=${getInsertedAllowed(
-          nextBtn
-        )}`;
-        $.ajax({
-          type: "POST",
-          data: data,
-          url: url,
-          success: function () {},
-          error: function () {},
-        });
+    // for program user
+    // if (!nextBtn.onclick) {
+    //   nextBtn.onclick = sendPost;
+    // }
+    // for hand-clicked button user
+    if (!nextBtn.onmousedown) {
+      nextBtn.onmousedown = sendPost;
+    }
+    // for short-cut user
+    if (!document.onkeydown) {
+      document.onkeydown = (e) => {
+        if (
+          e.ctrlKey && // if pressed Ctrl key
+          sentNotice && // if sentNotice exist
+          sentNotice.getAttribute("sent") !== "yes" // if sentNotice btn has not set to sent=yes
+        ) {
+          sendPost();
+          sentNotice.setAttribute("sent", "yes"); // avoid to repeated sending
+        }
       };
     }
   }
+
   if (popUpWindow) {
     if (!popUpWindow.onclick) {
       popUpWindow.onclick = () => {
@@ -323,4 +376,4 @@ let interval_fn = setInterval(() => {
       };
     }
   }
-}, 1000);
+}, 5000);
